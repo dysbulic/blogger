@@ -3,3 +3,5 @@
 <%= @article.body %>
 
 <p><%= link_to "← Back to articles", articles_path %></p>
+<p><%= link_to "Delete", articles_path(@article), method: :delete, confirm: "Delete Article?" %></p>
+<p><%= link_to "Edit", edit_article_path(@article) %></p>
